@@ -1,10 +1,16 @@
 import React from 'react'
+import AllComp, { Button, CenterDiv } from "manyr-components"
 
-import { ExampleComponent } from 'manyr-components'
-import 'manyr-components/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+	return <CenterDiv horizontal vertical>
+		<CenterDiv horizontal vertical>
+			<Button ButtonType={"danger"} disabled shakeIfDisabled solid color="red" Size="2xl">w</Button>
+			<Button shakeIfDisabled solid Size="2xl">awd</Button>
+			<Button solid>adssd</Button>
+			<AllComp />
+		</CenterDiv>
+	</CenterDiv>
 }
 
 export default App
